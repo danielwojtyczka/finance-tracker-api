@@ -11,7 +11,7 @@ Finance Tracker API is a backend REST API built with FastAPI and SQLAlchemy for 
 - Import expenses from CSV
 - Category summary report
 - Monthly summary report
-- Next month expense prediction
+- Next month expense forecast
 
 ## Tech Stack
 
@@ -58,4 +58,17 @@ http://127.0.0.1:8000/docs
 - POST /expenses/import-csv
 - GET /report/category-summary
 - GET /report/monthly-summary
+- GET /prediction/next-month
+
+## Testing
+
+Run tests with:
+
+```bash
+pytest
+```
+
+Current test coverage:
+- GET /expenses
+- POST /expenses
 - GET /prediction/next-month
